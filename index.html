@@ -1,0 +1,369 @@
+<!Doctype Html>
+<html lang="en">
+    <head>
+            <meta charset="UTF-8"
+            <meta http-equiv="X-UA-compatible" content="IE=edge">   
+            <meta name="viewport" content="width=device-width, initial-scale=1.0xp">
+            <link rel="stylesheet" href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRGTuYcnd1BTl-W2mzJfg8a9gsIRnRs_dYl8k702wxwX0dDYpPG2YUGT90eLFEYJo5oquw&usqp=CAU">
+
+            <title>central de mascotas</title>
+            <style>
+                html,
+                /* Primeramente ponemos un estilo global para todo el documento, lo que nos importa es tener un fondo de un color y un estilo de letra */
+                body {
+                  height: 100%;
+                  width: 100%;
+                  margin: 0;
+                  font-family: "Roboto", sans-serif;
+                  background-color: #ffffff;
+                }
+                h1,
+                h2,
+                h3 {
+                  /* Estilo global para el color del texto */
+                  color: rgb(255, 174, 0);
+                }
+                .container {
+                  /* Contenedor principal que tendra nuestros productos y toda la informacion, ajustamos su ancho para que no llegue a los bordes */
+                  max-width: 1200px;
+                  /* esto sirve para que quede centrado, el 0 significa el valor vertical en este caso no queremos margen vertical y el auto es el valor horizontal, significa que tendremos margen en los lados y esto va a centrar todo */
+                  margin: 0 auto;
+                  /* esto sirve para hacer un poco de espacio con los bordes de ese elemento, aporta en la estetica */
+                  padding: 15px;
+                }
+                .navbar {
+                  /* ponemos los estilos de la barra de navegacion de hasta arriba, con espacios usando padding, gap para distancia entre elementos y flex para que los elementos vayan uno a la par de otro */
+                  background-color: #000000;
+                  width: 100%;
+                  height: 100px;
+                  padding: 0px 20px;
+                  gap: 30px;
+                  display: flex;
+                  align-items: center;
+                }
+                .menu-text {
+                  padding-bottom: 50px;
+                }
+                .shadow-container {
+                  /* esta sombras nos ayuda a dar un toque estetico, los valores son: horizontal vertical difuminado grosor y por ultimo el color que queramos usar en este caso negro pero muy opaco, casi gris */
+                  box-shadow: 0px 4px 23px 1px rgb(0, 255, 200);
+                }
+                .shadow-light {
+                  box-shadow: 0px 2px 2px 1px rgb(65, 65, 65);
+                }
+                .card {
+                  /* estilo principal de la tarjeta de producto */
+                  background-color: rgb(255, 166, 0);
+                  border-radius: 10px;
+                  padding: 16px;
+                  display: flex;
+                }
+                .card-image {
+                  /* este estilo sirve para las imagenes que pondremos en el estilo anterior, colocamos un anchoy un alto fijo */
+                  width: 252px;
+                  height: 252px;
+                  display: flex;
+                  margin-right: 12px;
+                  /* object-fit sirve para ajustar el tamano de la imagen a nuestro estilo, ya que pueden ser de diferente tamaño, object-position sirve para centrarla */
+                  object-fit: cover;
+                  object-position: center;
+                }
+                .card-text {
+                  display: flex;
+                  /* el flex-direction nos sirve para determinar la direccion en la que queremos tener los elementos adentro, si es uno abajo de otro (columna), o si son a la par (fila) */
+                  flex-direction: column;
+                  width: 100%;
+                  /* el justify-content nos sirve para alinear los elementos en el espacio que tengamos disponible (enmedio, a los lados, parejo), es importante usar display:flex */
+                  justify-content: space-between;
+                }
+                .card-actions {
+                  display: flex;
+                  justify-content: end;
+                }
+                .content{
+                  background-color: transparent;
+                }
+                .action-button {
+                  background-color: #474747;
+                  color: #4a4a4a;
+                  border-radius: 8px;
+                  font-size: 14px;
+                  padding: 6px 8px;
+                  border: none;
+                  cursor: pointer;
+                  /* cursor pointer sirve para tener el estilo del mouse diferente cuando pasa por encima de ese objeto */
+                }
+                .rounded {
+                  border-radius: 12px;
+                }
+                .products-list {
+                  display: flex;
+                  flex-direction: column;
+                  gap: 20px;
+                }
+                /* modificando la linea divisora */
+                hr {
+                  height: 1px;
+                }
+              </style>
+            
+              <style type="text/css">
+
+			
+                * {
+                    margin:0px;
+                    padding:0px;
+                }
+                
+                #header {
+                    margin:auto;
+                    width:500px;
+                    font-family:Arial, Helvetica, sans-serif;
+                }
+                
+                ul, ol {
+                    list-style:none;
+                }
+                
+                .nav > li {
+                    float:left;
+                }
+                
+                .nav li a {
+                    background-color:#555555;
+                    color:#565656;
+                    text-decoration:none;
+                    padding:10px 15px;
+                    display:block;
+                }
+                
+                .nav li a:hover {
+                    background-color:#5a5a5a;
+                }
+                
+                .nav li ul {
+                    display:none;
+                    position:absolute;
+                    min-width:140px;
+                }
+                
+                .nav li:hover > ul {
+                    display:block;
+                }
+                
+                .nav li ul li {
+                    position:relative;
+                }
+                
+                .nav li ul li ul {
+                    right:-140px;
+                    top:0px;
+                }
+                
+            </style>
+            </head>
+            <body>
+    </head>
+    <body>
+
+            <div class="head">
+                
+                <nav class="navbar shadow-container">
+                    <h1>COMPLEJO EDUCATIVO REPÚBLICA DE HAITÍ. 
+                      <li> 1er año de bachillerato/ SECCIÓN: “A”</li>
+                       
+                      <li> Alumno: Mario Steven Mendoza Escobar </li>
+                  
+                      <li> Maestra: Mercedes Cristo </li</h1>
+                        
+                  </nav>
+
+            </div>
+
+            <style>
+                body {
+                    background-attachment: fixed;
+                    background-size: cover;
+                    background-color: rgb(255, 255, 255);
+                
+                }
+                
+                </style>
+
+            <header class="content header">
+                <h2 class="title">UNIDAD CANINA DE EL SALVADOR</h2>
+                <p> La Unidad Canina se formó con objeto de potenciar en lo posible el rescate y salvamento de 
+                  supervivientes sepultados por sismos u otros tipos de siniestros que impliquen el derrumbamiento 
+                  de edificios. Para lograr el objetivo de encontrar a las personas es necesario que el equipo 
+                  se someta a rigurosos entrenamientos.
+                  La Unidad Canina del Cuerpo de Bomberos de El Salvador está entrenada en el Método Arcón que es el 
+                  Sistema Hispano de formación e intervención para Equipos Caninos de Rescate en Catástrofes. 
+                  Fue creado por el español Jaime Parejo y la elección de la denominación de Arcón, fue en honor a 
+                  su compañero canino y alumno pionero.
+                  La Unidad Canina trabaja fundamentalmente sobre el conjunto de las siete técnicas conductuales 
+                  Arcón , las cuales se complementan e inciden con gran eficacia sobre tres parámetros fundamentales 
+                  e interrelacionados en las diferentes operaciones de búsqueda
+                  
+                </p>
+            </div>
+            <div class="card-actions">
+              <div style="text-align:left; display:block;">
+                <div style="display:flex">
+                  <video width="400" height="240" controls>
+                    <source src="Conoce el trabajo de nuestros elementos Caninos - PNC El Salvador.mp4" type="video/mp4">
+                  </video>
+                  <img src="UNIDADCANINA.jpg" width="400" height="300" class="center" .center {
+                    display: block;
+                    margin-left: auto;
+                    margin-right: auto;
+                    width: 50%;
+                  }>
+                </div>
+              </div>
+              </figure>
+
+            </header>
+
+            <section class="content sau">
+
+                <h2 class="title">LOS PERROS COMO MASCOTAS</h2>
+                <p> Las mascotas son una parte muy importante de cualquier familia. 
+                    Tienen una alta responsabilidad puesto que además de alimentarlas y cuidarlas para que estén sanas 
+                    (con sus revisiones en el veterinario) también hay que aportarles mucho amor, porque se lo merecen.
+                    El perro puede ser el gran y mejor amigo del hombre porque es un generador de buena energía, salud y felicidad para nosotros.
+                    ¿Sabías que los peludos pueden aportar muchos beneficios a nuestra salud? Y no lo decimos nosotros sino un 
+                    estudio publicado por la revista Current Biology. Los expertos han explicado que los perros entienden las 
+                    emociones humanas y que, alucina con esto, su cerebro reacciona a los sonidos, a los diferentes tonos de voz y 
+                    también a las maneras de actuar de cada persona.
+                    Esto significa que si estás pasando un mal momento, tu perro lo notarán pues tienen cierta 
+                    “empatía”. Asimismo, si te pones a gritar de felicidad, reaccionará contigo saltando y moviendo 
+                    ágilmente su cola. Si alguien intenta hacerte daño, sabrá defenderte y si te duele la barriga, 
+                    sabrá que algo te pasa.
+                    De hecho, muchos pediatras recomiendan a los padres que tienen hijos nerviosos acoger en casa a un animal 
+                    doméstico debido a los beneficios que puede aportarles. Tener mascota es reparador y mejora el estado anímico. 
+                    Muchas personas mayores tienen perro ya que evitan de esa forma sentirse solos. Además, los animales también 
+                    reducen el estrés, la depresión e incrementan la autoestima
+                </p>
+                <div class="card-actions">
+                  <div style="text-align:left; display:block;">
+                    <div style="display:flex">
+                      <video width="400" height="240" controls>
+                        <source src= "VIDEO CASA SI.MOV" type="video/mp4">
+                      </video>
+                      <img src="MOLLY.jpg" width="550" height="400" alt="" class="center" .center {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 50%;
+                      }>
+                    </div>
+
+                    
+                  </div>
+                  </figure>
+          </div>
+
+                <div class="box-container">
+
+                    <div class="box">
+                        <i class="fab fa-angolar"></i>
+                        <h3>PERROS DE SOPORTE EMOCIONAL</h3>
+                        <p> ¿QUÉ ES UN PERRO DE APOYO EMOCIONAL?
+                          Un perro de apoyo emocional es aquel que acompaña y ayuda a superar algún problema emocional o 
+                          psicológico, como una fobia, episodios de estrés, depresión... El apoyo que estos perros suponen para 
+                          la persona a la que acompañan es imprescindible para garantizar su bienestar emocional y físico. 
+                          
+                          La idea de animal de apoyo emocional (no solo perros) surgió en Estados Unidos, pero va 
+                           extendiéndose por todo el mundo.  El perro de apoyo emocional acompaña a la persona a todas partes, 
+                           para hacerle sentir mejor antes sus dificultades emocionales o psicológicas.  
+                          
+                          Los perros de apoyo emocional no requieren ningún entrenamiento específico, sino que solo deben acompañar 
+                          a sus dueños para ayudarles a nivel emocional con su simple presencia. 
+                          
+                          Este aspecto los diferencia de los perros de asistencia, entrenados para ayudar a personas con algún trastorno 
+                          o discapacidad, como los perros de respuesta médica, que detectan ataques de epilepsia o bajadas de azúcar, 
+                          los perros lazarillo o los perros de señalización de sonidos, para personas sordas, por ejemplo. 
+                          No es necesario que el perro de apoyo emocional tenga ninguna característica específica. Lo que sí es importante 
+                          es que se entienda bien con la persona a la que acompaña, y siga las normas básicas de convivencia, como no ser 
+                          agresivo, obedecer órdenes básicas como acudir a la llamada, estarse quieto...
+                        </p>
+                        <div class="card-actions">
+                            <div style="text-align:left; display:block;">
+                              <img src= "SOPORTE EMOCIONAL.jpeg"
+                               width="400" height="400" alt="">
+                            </div>
+                            </figure>
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-angular"></i>
+                        <h3>PERRO PASTOR</h3>
+                        <p> Se llama perro pastor a cualquier perro que ayuda al hombre en el manejo de rebaños de ovejas, 
+                          cabras y otros animales de granja. A los perros pastores que trabajan con ganado bovino se les conoce 
+                          como perros boyeros.
+
+                          Hay dos tipos de perro pastor, los de guardia que se encargan de proteger los rebaños del ataque de lobos
+                           y otros depredadores y los que se encargan de guiar y controlar a los rebaños en sus desplazamientos. 
+                           A estos últimos también se les llama perros de carea. Hay una gran variedad en su aspecto externo, pero 
+                           todos son animales ágiles, inteligentes, con gran capacidad de aprendizaje y con facilidad para resolver 
+                           situaciones imprevistas.
+                           El pastoreo es la profesión más antigua del mejor amigo del hombre. Desde que se domesticó a los lobos ya
+                            se les enseñó a vivir en convivencia y a salvaguardar la vida y la seguridad de los rebaños. 
+                            Con los años, esta labor se fue especializando y los perros se seleccionaron con mayor cuidado para 
+                            garantizar los mejores resultados. Con el auge de la ganadería intensiva esta figura se está perdiendo, 
+                            pero los ganaderos que críen en extensivo sabrán que los perros pastores de ovejas puede marcar la diferencia.
+                            Históricamente el pastoreo se ha realizado en las zonas de Asia y Europa en las que se cría ganado vacuno, ovino y,
+                            en menor medida, caprino. Las cabras por lo general son más ágiles y pastan en zonas de difícil acceso, de forma que
+                            están menos expuestas a depredadores, y son más independientes y menos gregarias, por lo que la labor del perro
+                            pastor se complica y no es tan útil. Los perros pastores de bovino también se llaman boyeros, y los de ovino,
+                             ovejeros (el Pastor Alemán, por ejemplo, también se llama Ovejero Alemán, aunque este segundo nombre es 
+                             mucho menos famoso). Independientemente de la especie que supervisan, los perros pastores se dividen en dos
+                            grandes grupos, dependiendo de cuál sea la labor para la que se crían
+                        </p>
+                        <div class="card-actions">
+                            <div style="text-align:left; display:block;">
+                              <img src= "PERRO PASTOR.jpeg"
+                              width="700" height="400" alt="">
+                            </div>
+                            </figure>
+                    </div>
+                    <div class="box">
+                        <i class="fab fa-android"></i>
+                        <h3>PERROS DE EXPOSICIÓN </h3>
+                        <p>
+                          Los especialistas señalan que estos perros tienen un perfil muy diferente y que requieren cuidados
+                           especiales, por lo que son mucho más que fieles mascotas. Por ello, consideran la cinofilia como 
+                           una actividad fundamental para continuar con la protección de las razas caninas, por generaciones. 
+                           “Se trata de una disciplina poco conocida que implica una crianza especial y amor por los perros, 
+                           y se encarga de preservar la raza del animal que, a la larga, puede llegar a extinguirse por falta 
+                           de cuidados, o también distorsiones que implican su degeneración”, explica Daniel Sánchez, adiestrador 
+                           profesional de perros de competición especializado en las razas dóberman y bóxer. También es miembro 
+                           del American Kennel Club, una de las organizaciones más importantes del mundo afiliada a la Federación 
+                           Canina Internacional. Señala que los perros de competición son los que califican para exposiciones, 
+                           como la feria canina que se realiza en el Madison Square Garden, en Manhattan, y que en Estados Unidos 
+                           tiene una tradición centenaria. Estas exposiciones se llevan a cabo hasta dos veces al año en todos los 
+                           condados. Precisamente, la 147 edición del Westminster Kennel Club, celebrada el pasado mes de febrero, 
+                           un espectáculo considerado como uno de los mejores.
+                           A pesar del mérito tanto de los adiestradores como de los perros, la obra ha suscitado polémica, por lo 
+                           que es poco expuesta. “Hay mucha gente en contra del mundo del espectáculo y protestan por la disciplina 
+                           del perro. El tema es que la gente humaniza a los perros porque tienen algún tipo de deficiencia, quizás.
+                            Y el daño lo recibe la mascota: acaban confundidos, desaparece el instinto y se ponen nerviosos e 
+                            inseguros y hasta alérgicos”, indica Sánchez. “Lo importante es preservar la raza del perro, esa es nuestra tarea fundamental”.
+                        </p>
+                        <div class="card-actions">
+                            <div style="text-align:left; display:block;">
+                              <img src="COMPETENCIAPERROS.jpg" 
+                              width="500" height="400" alt="">
+                            </div>
+                            </figure>
+                    </div>
+
+                </div> 
+
+            </section>
+
+                </article>
+
+            </section>
+
+    </body>
+</html>
